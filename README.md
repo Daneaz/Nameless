@@ -11,4 +11,4 @@ Third, type in **"php migration"** this will migrate the database.
 
 It will be something looks like this.
 
-![alt text](https://github.com/eugeneaad/Nameless/master/pic.png)
+![alt text](https://github.com/eugeneaad/Nameless/master/pic.jpg)
