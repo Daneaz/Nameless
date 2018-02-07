@@ -10,5 +10,7 @@ Second, cd to your working directory, then type in command **"composer install"*
 Third, type in **"php migration"** this will migrate the database. 
 
 It will be something looks like this.
+![alt tag](https://github.com/eugeneaad/Nameless/blob/master/pic.JPG)
 
-![alt text](https://github.com/eugeneaad/Nameless/master/pic.jpg)
+
+
