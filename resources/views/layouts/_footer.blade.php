@@ -6,9 +6,13 @@
     <!-- /.container -->
 </footer>
 
-    <script src="/vendor/popper/popper.min.js"></script>
+{{ Html::script('/vendor/popper/popper.min.js') }}
+{{ Html::script('/vendor/jquery/jquery.min.js') }}
+{{ Html::script('/vendor/bootstrap/js/bootstrap.min.js') }}
+{{ Html::script('/DataTables/datatables.js') }}
+    <!-- <script src="/vendor/popper/popper.min.js"></script>
     <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="/DataTables/datatables.js"></script>
+    <script type="text/javascript" src="/DataTables/datatables.js"></script> -->
 
 <script>
     $(document).ready(function() {
