@@ -12,10 +12,12 @@
      @include('layouts._header')
 
     <!-- Styles -->
+    <!-- {{ Html::style('/css/app.css') }} -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     @if(Auth::user())
     <link href="{{ asset('css/chat.css') }}" rel="stylesheet">
+    <!-- {{ Html::style('/css/chat.css') }} -->
     <script>
         window.userid = {{Auth::user()->id}};
         window.username = "{{Auth::user()->name}}";
@@ -35,6 +37,7 @@
     </div>
  </div>
     <!-- Scripts -->
+    <!-- {{ Html::script('/css/chat.css') }} -->
     <script src="{{ asset('js/app.js') }}"></script>
 </body>
 @include('layouts._footer')
