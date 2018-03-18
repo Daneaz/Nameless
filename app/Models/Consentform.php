@@ -2,7 +2,7 @@
 
 /**
  * Created by Reliese Model.
- * Date: Fri, 27 Oct 2017 13:03:52 +0000.
+ * Date: Sun, 18 Mar 2018 10:30:12 +0000.
  */
 
 namespace App\Models;
@@ -14,8 +14,10 @@ use Reliese\Database\Eloquent\Model as Eloquent;
  * 
  * @property int $consentForm_id
  * @property string $form
- * @property int $adminid
+ * @property int $admin_id
  * @property string $title
+ * @property \Carbon\Carbon $created_at
+ * @property \Carbon\Carbon $updated_at
  *
  * @package App\Models
  */
@@ -23,17 +25,14 @@ class Consentform extends Eloquent
 {
 	protected $table = 'consentform';
 	protected $primaryKey = 'consentForm_id';
-	public $incrementing = false;
-	public $timestamps = false;
 
 	protected $casts = [
-		'consentForm_id' => 'int',
-		'adminid' => 'int'
+		'admin_id' => 'int'
 	];
 
 	protected $fillable = [
 		'form',
-		'adminid',
+		'admin_id',
 		'title'
 	];
 }
