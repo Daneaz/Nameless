@@ -20,12 +20,20 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ url('consentForm') }}">Consent Form</a>
                         </li>
+                    @if (Auth::user()->usertype == 'parent')
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url('viewResult') }}">View Result</a>
+                        </li>
+                    @endif
                         @if (Auth::user()->usertype == 'teacher')
                         <li class="nav-item">
                             <a class="nav-link" href="{{ url('adminconsentForm') }}">Modify Consent Form</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ url('publishStud') }}">Publish Attendance</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url('uploadResults') }}">Upload Results</a>
                         </li>
                         @endif
                 <li class="nav-item">

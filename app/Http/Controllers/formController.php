@@ -45,7 +45,7 @@ public function processForm(Request $request){
     $form = $request->input('content');
     $admin_id = Auth::user()->id;
     DB::table('consentform')->insert(
-        ['title'=>$title, 'form' => $form, 'adminid'=> $admin_id]
+        ['title'=>$title, 'form' => $form, 'admin_id'=> $admin_id]
     );
     return back();
   } else if ($request->input('action') == 'delete') {

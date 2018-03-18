@@ -1,14 +1,15 @@
 <html >
 <head>
-    <link rel="stylesheet" href="/css/bootstrap.min.css" >
-
+    <!-- <link rel="stylesheet" href="/css/bootstrap.min.css" > -->
+    {{ Html::style('/css/bootstrap.min.css') }}
     <!-- Styles -->
 
     <!-- <link href="/css/app.css" rel="stylesheet"> -->
-    <link rel="stylesheet" type="text/css" href="/DataTables/datatables.css" >
-
+    <!-- <link rel="stylesheet" type="text/css" href="/DataTables/datatables.css" > -->
+  {{ Html::style('/DataTables/datatables.css') }}
     <!-- Custom styles for this template -->
-    <link href="/css/homepage.css" rel="stylesheet">
+    <!-- <link href="/css/homepage.css" rel="stylesheet"> -->
+    {{ Html::style('/css/homepage.css') }}
 </head>
 
 
