@@ -1,7 +1,7 @@
 <!-- Footer -->
 <footer class="py-5 bg-dark" style="padding-bottom: 0px; padding-top: 0px">
     <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; YSGLearning 2017</p>
+        <p class="m-0 text-center text-white">Copyright &copy; YSGLearning 2018</p>
     </div>
     <!-- /.container -->
 </footer>

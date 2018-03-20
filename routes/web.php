@@ -39,7 +39,7 @@ Route::get('/School', function () {
 
 Route::resource('School', 'SchoolController');
 Route::post('School/finder', 'SchoolController@find');
-
+Route::get('School/index/{school_id}', 'SchoolController@showSchoolName');
 
 
 // consent form routes

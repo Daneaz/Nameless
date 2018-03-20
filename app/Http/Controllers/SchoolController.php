@@ -60,16 +60,16 @@ $Subjects->prepend('Please Select');
 		$column = 'schoolId'; // This is the name of the column you wish to search
 
        $School = School::where($column , '=', $id)->first();
-  
+
       return view('School.show', array('School' => $School));
     }
  public function find(Request $request)
     {
-		
+
 		$number = (int)$request->subject;
 		$number1 = (int)$request->cca;
 
-		
+
 		$column = 'sj.subject_desc';
 $column1 = 'c.cca_generic_name';
 $cca =	DB::table('cca')->distinct()->select('cca_generic_name')->get()->pluck('cca_generic_name');// This is the name of the column you wish to search
@@ -82,7 +82,7 @@ $Subjects = DB::table('subjects')->distinct()->select('subject_desc')->get()->pl
 		if($number1 !=0){
 		$ca =$cca[$number1-1];
 		}
-			
+
 $cca->prepend('Please Select');
 $Subjects->prepend('Please Select');
 if($number !=0 && $number1 !=0){
@@ -134,5 +134,17 @@ else{
     public function destroy($id)
     {
         //
+    }
+
+
+    public function showSchoolName(Request $request){
+      //if (Auth::check()) {
+        $school_id=$_GET['school_id'];
+          $school = DB::select('select school_name from schools where schoolId =?' , [$school_id]);
+           return response()->json($school);
+
+    //  } else {
+      //  return view('auth/login');
+      //}
     }
 }
