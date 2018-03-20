@@ -21,7 +21,7 @@ class studController extends Controller
 
       public function msg() {
             $names=$_GET['names'];
-            Twilio::message("+6596588614", "Your child is present today.");
+            Twilio::message("+6597985397", "Your child is present today.");
             // foreach($names as $name) {
             //   Twilio::message("+6596588614", "Your child is present today.");
             // }

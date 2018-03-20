@@ -53,6 +53,12 @@ Route::get('adminconsentForm', 'formController@showModify');
 Route::get('publishStud', 'studController@showStudent');
 Route::get('publishStud/send', 'studController@msg');
 
+// upload student results routes
+Route::get('uploadResults', function () {
+    return view('uploadResults');
+});
+Route::post('importExcel', 'resultController@importExcel');
+Route::get('viewResult', 'resultController@viewResult');
 
 // groupchat routes
 

@@ -10,20 +10,20 @@ namespace App\Models;
 use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
- * Class Subject
+ * Class Student
  * 
  * @property int $id
- * @property string $subject_desc
- * @property string $school_name
+ * @property \Carbon\Carbon $created_at
+ * @property \Carbon\Carbon $updated_at
+ * @property string $name
+ * @property string $phone
  *
  * @package App\Models
  */
-class Subject extends Eloquent
+class Student extends Eloquent
 {
-	public $timestamps = false;
-
 	protected $fillable = [
-		'subject_desc',
-		'school_name'
+		'name',
+		'phone'
 	];
 }

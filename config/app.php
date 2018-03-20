@@ -167,6 +167,7 @@ return [
     		Reliese\Coders\CodersServiceProvider::class,
     		Illuminate\Html\HtmlServiceProvider::class,
 			Aloha\Twilio\Support\Laravel\ServiceProvider::class,
+        'Maatwebsite\Excel\ExcelServiceProvider',
         /*
          * Package Service Providers...
          */
@@ -231,6 +232,8 @@ return [
         'Form' => Illuminate\Html\FormFacade::class,
         'Html' => Illuminate\Html\HtmlFacade::class,
 		'Twilio' => Aloha\Twilio\Support\Laravel\Facade::class,
+        'Excel' => 'Maatwebsite\Excel\Facades\Excel',
+        'Input' => Illuminate\Support\Facades\Input::class,
     ],
 
 ];
